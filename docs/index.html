@@ -1,67 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="images/x-icon" href="icon.png">
 </head>
 
-<body>    
+<body>
     <div class="container">
-
         <header>
             <div class="img__area">
-                <img src="image.jpg" alt="">
-            </div> 
+                <img src="image.jpg" alt="Profile Picture" class="profile-img" width="300" height="300">
+            </div>
             <h1>Kirill Isakov</h1>
             <h3><i>Future Full-Stack Developer</i></h3>
         </header>
-      
-        <main class="info">
-            
-            <section class="info__field">
 
+        <main>
+            <div class="info">
                 <h2>About Me</h2>
-                <h4 class="self">I am a second-year computer science student. Live in Belarus.<br>
-                    My main area of interest is related to software development, I also want to develop in the direction of web-development and to study both front-end and back-end.<br>
+                <p class="self">I am a second-year computer science student. Live in Belarus.<br>
+                    My main area of interest is related to software development, I also want to develop in the direction
+                    of web-development and to study both front-end and back-end.<br>
                     Now I'm studying programming to become a Full-stack developer.<br>
-                    <strong>I am very responsible and ambitious for my projects.</strong></h4>
+                    <strong>I am very responsible and ambitious for my projects.</strong>
+                </p>
+            </div>
 
+            <div class="contacts">
                 <h3>Contacts</h3>
                 <nav>
                     <ul>
                         <li><strong>GitHub:</strong> <a href="https://github.com/porneliusss">porneliusss</a></li>
-                        <li><strong>Email:</strong> <a href="mailto:isakovkirill123@gmail.com">isakovkirill123@gmail.com</a></li>
+                        <li><strong>Email:</strong> <a
+                                href="mailto:isakovkirill123@gmail.com">isakovkirill123@gmail.com</a></li>
                         <li><strong>VK:</strong> <a href="https://vk.com/llliixxx">.llliixxx</a></li>
                     </ul>
                 </nav>
+            </div>
 
+            <div class="technologies_stack">
                 <h3>Technologies Stack</h3>
                 <ul>
-                  <li>C#</li>
-                  <li>C++</li>
-                  <li>HTML/CSS</li>
-                  <li>JS</li>
-                  <li>SQL (MS SQL Server)</li>
+                    <li>C#</li>
+                    <li>C++</li>
+                    <li>HTML/CSS</li>
+                    <li>JS</li>
+                    <li>SQL (MS SQL Server)</li>
                 </ul>
-      
+            </div>
+
+            <div class="languages">
                 <h3>My languages</h3>
                 <ul>
                     <li>Russian</li>
                     <li>Belarussian</li>
                     <li>English<strong> (B1)</strong></li>
                 </ul>
+            </div>
 
-            </section>
+            <div class="skills">
+                <h4>Skills</h4>
+                <ul>
+                    <li>Programming Languages:** C#, C++, SQL, JS</li>
+                    <li>rameworks:** Spring Boot, .NET Framework</li>
+                    <li>Methodologies:** Object-Oriented Programming, Agile Software Development</li>
+                    <li>Version Control Systems:** Git</li>
+                    <li>Development Tools:** Visual Studio, IntelliJ IDEA, Unreal Engine Creation Platform, Unity Editor
+                    </li>
+                    <li>Game Development:** UE5, Unity</li>
+                    <li>3D Modeling:** Blender</li>
+                </ul>
+            </div>
+
+            <div class="code_example">
+                <h3>Code example</h3>
+                <h4>Working with API (C#)</h4>
+                <pre>
+                <code>
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+public class Program
+{
+    public static async Task Main(string[] args)
+    {
+        using (HttpClient client = new HttpClient())
+        {
+            string apiUrl = "https://api.example.com/data";
+
+            HttpResponseMessage response = await client.GetAsync(apiUrl);
+
+            if (response.IsSuccessStatusCode)
+            {
+                string content = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(content);
+            }
+            else
+            {
+                Console.WriteLine("Error while executing request");
+            }
+        }
+    }
+}</code></pre>
+                <h4>Working with files (C++)</h4>
+                <pre>
+                <code>
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;string&gt;
+    
+int main() {
+    std::string fileName = "example.txt";
+    std::ofstream outFile(fileName);
+    
+    if (outFile.is_open()) {
+        outFile &lt;&lt; "Hello, world!" &lt;&lt; std::endl;
+        outFile.close();
+        std::cout &lt;&lt; "File written successfully" &lt;&lt; std::endl;
+    }
+    else {
+        std::cout &lt;&lt; "Failed to open file" &lt;&lt; std::endl;
+    }                        
+    return 0;
+}
+                </code></pre>
+            </div>
         </main>
 
         <footer>
 
         </footer>
     </div>
-    
-
 </body>
+
+</html>
