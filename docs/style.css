@@ -1,0 +1,99 @@
+header,
+main {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #64ac8f;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: #e7f5dc;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #c0dfc2;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);;
+    margin-bottom: 30px;
+}
+
+.self,
+.technologies_stack,
+.languages,
+.skills {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.code_example {
+    margin-bottom: 40px;
+}
+
+code {
+    font-family: Consolas, monospace;
+}
+
+pre {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    background-color: #64ac8f;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
